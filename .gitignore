@@ -14,6 +14,11 @@ videos/**/audio/*.mp3
 videos/**/audio/*.wav
 *.mp4
 *.mov
+# ...but DO commit the small preview/proof reels.
+!assets/preview/*.mp4
+
+# Scratch / build
+build/
 
 # OS / tooling
 .DS_Store
