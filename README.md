@@ -25,6 +25,7 @@ channel/
   bible.md              ← Willow + the family voice cast + visual/voice rules  ⭐ read this
   STRATEGY.md           ← the business + 18-month plan to $60k/mo
   MONETIZATION.md       ← the honest revenue model + the math
+  SEO-DISCOVERY.md      ← titles, thumbnails, keywords, how kids content gets found
   VOICE-GUIDE.md        ← how the family records clean voice samples
 characters/
   willow-character-brief.md  ← locked design + master prompt to draw Willow from real photos
