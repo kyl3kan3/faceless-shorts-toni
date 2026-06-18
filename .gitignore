@@ -1,0 +1,21 @@
+# Secrets — never commit
+.env
+.env/
+*.key
+*api*key*
+
+# Children's raw voice recordings are sensitive — keep them local, do NOT commit.
+assets/voices/*
+!assets/voices/.gitkeep
+
+# Rendered media (large + regenerable) — keep scripts/prompts, not the heavy outputs.
+videos/**/final/
+videos/**/audio/*.mp3
+videos/**/audio/*.wav
+*.mp4
+*.mov
+
+# OS / tooling
+.DS_Store
+Thumbs.db
+node_modules/

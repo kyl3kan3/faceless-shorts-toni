@@ -1,0 +1,56 @@
+{
+  "channel": {
+    "niche": "pre-K / early-elementary learning (ages 2-7): counting, ABCs, phonics, shapes, colors, animals, feelings - taught by a cartoon dog",
+    "format": "youtube_shorts",
+    "name": "Learn With Willow",
+    "handle": "@LearnWithWillow",
+    "character": "Willow the Wonder Pup",
+    "tagline": "Come learn with Willow!"
+  },
+  "video": {
+    "width": 1080, "height": 1920, "fps": 30,
+    "max_duration_s": 50, "aspect_ratio": "9:16",
+    "target_words": 75, "beats": 6,
+    "_note": "KIDS DELTA vs base skill: slower delivery for ages 2-7, so ~75 words ~= ~33-38s. Keep 6 beats (one idea per beat). Still aim for the VO to be slightly shorter than 6x5s=30s of clips... for kids we actually use LONGER holds per image (see style.motion) so target ~6 clips at 6s. Re-check fps after edit_speed."
+  },
+  "models": {
+    "image": "nano_banana_2",
+    "video": "cinematic_studio_video",
+    "_video_note": "Do NOT use kling2_6 (failed a whole batch, still charged). For Willow TALKING shots, add a lipsync pass (Pika generate_lipsync) over the animated clip.",
+    "tts_tool": "elevenlabs_api",
+    "tts_provider": "elevenlabs",
+    "tts_model": "eleven_multilingual_v2",
+    "_voice_note": "KIDS DELTA: this channel uses MULTIPLE family voices, not one narrator. Clone each family member once via the ElevenLabs REST API (see channel/bible.md > Voice cast). Fill the ids below after cloning. tts.ps1 takes -VoiceId to pick which voice per line.",
+    "tts_voices": {
+      "willow":  "<ELEVENLABS_VOICE_ID - Willow the Wonder Pup (see bible: 5yo girl pitched bright, OR a dedicated playful clone)>",
+      "mama":    "<ELEVENLABS_VOICE_ID - Mom (lead teacher / narrator)>",
+      "papa":    "<ELEVENLABS_VOICE_ID - Dad (warm guide / counting buddy)>",
+      "leo":     "<ELEVENLABS_VOICE_ID - 7yo boy (curious big-kid sidekick)>",
+      "daisy":   "<ELEVENLABS_VOICE_ID - 5yo girl (Willow's best friend)>"
+    },
+    "tts_voice_id": "<DEFAULT = mama's id; tts.ps1 falls back to this when -VoiceId omitted>",
+    "music": "generate_music"
+  },
+  "style": {
+    "image_suffix": "bright cheerful 2D cartoon storybook illustration for young children, bold clean outlines, flat saturated candy colors, soft rounded shapes, simple uncluttered background, big friendly eyes, wholesome and warm, preschool picture-book aesthetic, single clear subject centered, vertical 9:16 composition, no text, no scary elements",
+    "motion": "gentle bouncy idle motion, soft bobbing, slow friendly push-in, NO fast or jarring moves (calm for little kids)",
+    "captions": { "style": "playful", "position": "bottom", "_note": "KIDS DELTA: big rounded friendly word captions at the BOTTOM (not aggressive hormozi middle). Toddlers/pre-readers + parents reading along. Keep 1-3 words per cue." },
+    "character_consistency": "Willow MUST look identical every video. Pass her locked reference image(s) into every generate_image call as a character reference, and keep characters/willow-character-brief.md open. Regenerate the reference from the REAL dog photos once provided (see INTAKE.md)."
+  },
+  "audio": {
+    "music_brief": "happy gentle xylophone/ukulele/glockenspiel kids nursery melody, major key, simple and loopable, ~60s",
+    "intro_sting": "1.5s Willow bark + sparkle -> show title card",
+    "outro": "Willow waves: 'Come learn with Willow!' + soft loop back to start"
+  },
+  "youtube": {
+    "channel_id": "<UC... if known>",
+    "categoryId": "27",
+    "default_privacy": "public",
+    "made_for_kids": true,
+    "_coppa_note": "REQUIRED BY LAW: this is child-directed content -> selfDeclaredMadeForKids = true on every upload. Do NOT cheat this (FTC fines). It disables comments/memberships/Super Thanks/personalized ads. The money comes from elsewhere - see channel/MONETIZATION.md."
+  },
+  "distribution": {
+    "_note": "Produce the 9:16 master once, post everywhere. Re-cut 16:9 + 1:1 from the same assets.",
+    "platforms": ["youtube_shorts", "youtube_long_compilations", "tiktok", "instagram_reels", "facebook_reels", "pinterest"]
+  }
+}
