@@ -1,8 +1,9 @@
 # Brand kit — Learn With Willow
 
-Reusable identity assets. The character art is **placeholder** until Willow's real
-photos arrive (see [`../../INTAKE.md`](../../INTAKE.md)); the *system* (colors, fonts,
-layouts) is locked.
+Reusable identity assets, now built around the **real locked Willow**
+([`../concept/willow-hero.png`](../concept/willow-hero.png)). The rendered PNGs are
+committed alongside the editable HTML templates; the system (colors, fonts, layouts)
+is locked.
 
 ## Palette
 | Token | Hex | Use |
@@ -30,12 +31,18 @@ size. Loaded via `@import` in each template. (Alternatives: Baloo 2, Nunito.)
 Canva. The templates reference the local placeholder face in `../concept/`; swap the
 `<img src>` (and the thumbnail's 3 EDIT slots) per video / once the real Willow exists.
 
-## Source character art (placeholders)
-- `../concept/willow-model-sheet-PLACEHOLDER.png` — Willow, 5 poses
-- `../concept/willow-face-PLACEHOLDER.png` — Willow hero face (logo/thumbnail)
-- `../concept/daisy-model-sheet-PLACEHOLDER.png` — Daisy (5-yo's character), 3 poses
-- `../concept/leo-model-sheet-PLACEHOLDER.png` — Leo (7-yo's character), 3 poses
-- `../concept/ep001-count-to-5-frame-PLACEHOLDER.png` — sample episode frame
+## Rendered output (committed PNGs)
+- `willow-logo.png` — 3200×1040, transparent (horizontal lockup)
+- `willow-avatar.png` — 1600×1600 (square profile pic, every platform)
+- `willow-thumbnail.png` — 2560×1440 (16:9 template, "COUNT TO 5!" sample)
+
+## Source character art (real, locked)
+- `../concept/willow-hero.png` — **canonical Willow**, owner-approved (single source of truth)
+- `../concept/willow-face.png` — Willow head cutout, transparent (logo + avatar badge)
+- `../concept/willow-cutout.png` — full-body Willow cutout, transparent (thumbnails)
+- `../concept/willow-pose-*.png` — expression kit (thinking / excited / pointing / waving / peek)
+- `../concept/daisy-model-sheet-PLACEHOLDER.png`, `leo-model-sheet-PLACEHOLDER.png` —
+  supporting cast, **still placeholder** (regenerate from real refs later)
 
 ## Music
 - `../music/willow-nursery-bed-60s.mp3` — 60s loopable nursery instrumental bed

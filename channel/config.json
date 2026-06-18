@@ -22,11 +22,11 @@
     "tts_model": "eleven_multilingual_v2",
     "_voice_note": "KIDS DELTA: this channel uses MULTIPLE family voices, not one narrator. Clone each family member once via the ElevenLabs REST API (see channel/bible.md > Voice cast). Fill the ids below after cloning. tts.ps1 takes -VoiceId to pick which voice per line.",
     "tts_voices": {
-      "willow":  "<ELEVENLABS_VOICE_ID - Willow the Wonder Pup (see bible: 5yo girl pitched bright, OR a dedicated playful clone)>",
+      "willow":  "zTwvFDqpcXCaEfcXze1U",
       "mama":    "STYxKP7DOwxgXBiQyRSr",
       "papa":    "HgKmyw1SUU69yWHLJLsW",
       "leo":     "vylPBu4ySOnOAuH9vjej",
-      "daisy":   "<ELEVENLABS_VOICE_ID - 5yo girl (Willow's best friend)>"
+      "daisy":   "zTwvFDqpcXCaEfcXze1U"
     },
     "tts_voice_id": "STYxKP7DOwxgXBiQyRSr",
     "music": "generate_music"
