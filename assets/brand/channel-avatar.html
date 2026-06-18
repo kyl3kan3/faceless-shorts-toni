@@ -1,0 +1,31 @@
+<!doctype html>
+<!--
+  Learn With Willow — CHANNEL AVATAR (square, use as profile pic on every platform)
+  Render: browser screenshot, OR Pika html_to_png (viewport 800x800, device_scale:2),
+  OR Adobe Express / Canva. Swap <img> to the real Willow face when ready.
+-->
+<html lang="en"><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap');
+  :root{ --teal:#19B5A5; --teal-deep:#0E8C80; --cream:#FFF7E8; --ink:#3A2E2A; }
+  *{margin:0;box-sizing:border-box}
+  html,body{width:800px;height:800px;font-family:'Fredoka',sans-serif}
+  .av{position:relative;width:800px;height:800px;overflow:hidden;
+    background:radial-gradient(circle at 50% 42%, #2BC9B8 0%, var(--teal) 55%, var(--teal-deep) 100%)}
+  .ring{position:absolute;top:96px;left:50%;transform:translateX(-50%);
+    width:560px;height:560px;border-radius:50%;background:var(--cream);
+    border:16px solid #fff;box-shadow:0 16px 36px rgba(0,0,0,.22);
+    display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+  .ring img{width:106%;margin-bottom:-2%}
+  .ribbon{position:absolute;left:0;right:0;bottom:54px;text-align:center;
+    font-weight:700;font-size:78px;letter-spacing:.02em;color:#fff;
+    -webkit-text-stroke:8px var(--ink);paint-order:stroke fill;
+    text-shadow:0 6px 0 rgba(58,46,42,.3)}
+  .ribbon small{display:block;font-size:34px;-webkit-text-stroke:4px var(--ink);letter-spacing:.18em}
+</style></head>
+<body>
+  <div class="av">
+    <div class="ring"><img src="../concept/willow-face-PLACEHOLDER.png" alt="Willow"></div>
+    <div class="ribbon"><small>LEARN&nbsp;WITH</small>WILLOW</div>
+  </div>
+</body></html>

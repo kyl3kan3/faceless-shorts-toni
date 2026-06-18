@@ -9,8 +9,14 @@ and save the result as `willow-model-sheet.png` (the real, locked reference).
 
 | File | What it shows | Use |
 |------|---------------|-----|
-| `willow-model-sheet-PLACEHOLDER.png` | 5 poses (sit / think / jump / point / wave), teal bandana | locks line, color, proportions, expressions |
+| `willow-model-sheet-PLACEHOLDER.png` | Willow, 5 poses (sit / think / jump / point / wave), teal bandana | locks line, color, proportions, expressions |
+| `willow-face-PLACEHOLDER.png` | Willow hero face, front, big smile | logo badge + thumbnail face |
+| `daisy-model-sheet-PLACEHOLDER.png` | Daisy (the 5-yo's character), 3 poses, coral dress | supporting cast — keep subordinate to Willow |
+| `leo-model-sheet-PLACEHOLDER.png` | Leo (the 7-yo's character), 3 poses, teal cap + backpack | supporting cast — keep subordinate to Willow |
 | `ep001-count-to-5-frame-PLACEHOLDER.png` | Willow + 5 apples, 9:16, mint bg | proves the flashcard look + where number/title overlays go |
+
+Brand templates (logo, avatar, thumbnail) built from these live in `../brand/`.
+A 60s nursery music bed lives in `../music/`.
 
 **Style confirmed by these frames:** bright flat 2D cartoon storybook, bold clean
 outlines, candy colors, big friendly eyes, puppy-cute proportions, teal `#19B5A5`

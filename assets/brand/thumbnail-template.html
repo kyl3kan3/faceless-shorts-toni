@@ -1,0 +1,53 @@
+<!doctype html>
+<!--
+  Learn With Willow — REUSABLE THUMBNAIL TEMPLATE (16:9, 1280x720)
+  This is the channel's locked thumbnail look. Keep it identical every video so the
+  channel is instantly recognizable in Suggested/autoplay (see channel/SEO-DISCOVERY.md).
+
+  ► EDIT 3 THINGS PER VIDEO (marked EDIT below):
+    1) --headline  : 2-3 words, e.g. "COUNT TO 5!", "LETTER S", "COLOR MAGIC"
+    2) the BIG SYMBOL block: a number / letter / shape (the lesson)
+    3) the Willow expression img (swap to a matching pose)
+
+  Render: browser screenshot, OR Pika html_to_png (viewport 1280x720, device_scale:2),
+  OR Adobe Express / Canva. A 9:16 cover = change html/body to 720x1280 and stack.
+-->
+<html lang="en"><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap');
+  :root{
+    --teal:#19B5A5; --teal-deep:#0E8C80; --cream:#FFF7E8; --ink:#3A2E2A; --sun:#FFC94D; --red:#E8514B;
+    --headline:"COUNT TO 5!";   /* EDIT 1 */
+  }
+  *{margin:0;box-sizing:border-box}
+  html,body{width:1280px;height:720px;font-family:'Fredoka',sans-serif}
+  .thumb{position:relative;width:1280px;height:720px;overflow:hidden;
+    background:radial-gradient(circle at 32% 40%, #EAFBF7 0%, #CFF1EA 60%, #B6E8DF 100%);
+    border:18px solid var(--teal)}
+  /* top headline banner */
+  .banner{position:absolute;top:30px;left:50%;transform:translateX(-50%);
+    background:var(--sun);padding:14px 46px;border-radius:26px;border:8px solid var(--ink);
+    font-weight:700;font-size:84px;color:#fff;-webkit-text-stroke:7px var(--ink);paint-order:stroke fill;
+    box-shadow:0 12px 0 rgba(58,46,42,.25);white-space:nowrap}
+  .banner::before{content:var(--headline)}
+  /* big lesson symbol (EDIT 2) */
+  .symbol{position:absolute;left:120px;top:250px;text-align:center}
+  .symbol .num{font-weight:700;font-size:300px;line-height:.9;color:var(--red);
+    -webkit-text-stroke:16px var(--ink);paint-order:stroke fill;text-shadow:0 16px 0 rgba(58,46,42,.18)}
+  .dots{margin-top:6px;font-size:74px;letter-spacing:8px}
+  /* Willow (EDIT 3) */
+  .willow{position:absolute;right:-10px;bottom:-10px;width:560px;height:560px;
+    display:flex;align-items:flex-end;justify-content:center}
+  .willow img{width:100%;filter:drop-shadow(0 10px 18px rgba(0,0,0,.18))}
+  .badge-paw{position:absolute;left:40px;bottom:34px;font-size:70px}
+</style></head>
+<body>
+  <div class="thumb">
+    <div class="banner"></div>
+    <!-- EDIT 2: replace .num text + .dots to match the lesson -->
+    <div class="symbol"><div class="num">5</div><div class="dots">🍎🍎🍎🍎🍎</div></div>
+    <!-- EDIT 3: swap to a matching Willow pose -->
+    <div class="willow"><img src="../concept/willow-face-PLACEHOLDER.png" alt="Willow"></div>
+    <div class="badge-paw">🐾</div>
+  </div>
+</body></html>
