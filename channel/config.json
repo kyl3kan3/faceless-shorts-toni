@@ -20,13 +20,13 @@
     "tts_tool": "elevenlabs_api",
     "tts_provider": "elevenlabs",
     "tts_model": "eleven_multilingual_v2",
-    "_voice_note": "KIDS DELTA: this channel uses MULTIPLE family voices, not one narrator. Clone each family member once via the ElevenLabs REST API (see channel/bible.md > Voice cast). Fill the ids below after cloning. tts.ps1 takes -VoiceId to pick which voice per line.",
+    "_voice_note": "KIDS DELTA: multiple voices. Mama/Papa/Leo are family CLONES. UPDATE: Willow now uses a purpose-DESIGNED voice (ElevenLabs Voice Design, not a family clone) — the provided 'Daisy' recording was scrapped, so the daisy slot is unset (design a separate voice if the Daisy character is ever used). tts.ps1 takes -VoiceId to pick which voice per line.",
     "tts_voices": {
-      "willow":  "zTwvFDqpcXCaEfcXze1U",
+      "willow":  "N5KWZShvuwHXPTahyw3s",
       "mama":    "STYxKP7DOwxgXBiQyRSr",
       "papa":    "HgKmyw1SUU69yWHLJLsW",
       "leo":     "vylPBu4ySOnOAuH9vjej",
-      "daisy":   "zTwvFDqpcXCaEfcXze1U"
+      "daisy":   ""
     },
     "tts_voice_id": "STYxKP7DOwxgXBiQyRSr",
     "music": "generate_music"
