@@ -6,7 +6,7 @@ parents trust. Keep this open whenever generating any image of Willow.
 
 ---
 
-## ✅ Status: REAL FOOTAGE RECEIVED — reference frames staged
+## ✅ Status: LOCKED — canonical cartoon Willow chosen
 Willow is a **real family dog: a Vizsla** (warm rust/copper coat). Reference frames
 were extracted from the owner's clips and staged **locally** (gitignored for privacy —
 they show the real home) at:
@@ -14,10 +14,12 @@ they show the real home) at:
 - `assets/willow-photos/willow_ref_02_sit_front.jpg` — full-body sitting, proportions
 - `assets/willow-photos/willow_ref_03_sit_profile.jpg` — 3/4 profile, muzzle + ear shape
 
-**Next:** run the "Master regeneration prompt" below with these frames as reference
-images, produce a **character turnaround + expression sheet**, save the chosen frames
-to `assets/concept/willow-model-sheet.png` (safe to commit — it's the cartoon, not the
-home), then every future `generate_image` call passes that model sheet as a reference.
+**LOCKED design → [`../assets/concept/willow-hero.png`](../assets/concept/willow-hero.png)**
+— the owner-approved cartoon Willow (generated from the frames above, picked by the
+owner). She is a rust Vizsla pup **with a white chest blaze and cream muzzle/chin**,
+teal bandana. THIS image is the single source of truth: pass it as a reference image
+into every future `generate_image` call so she looks identical. The reusable expression
+kit lives in `assets/concept/willow-pose-*.png`.
 
 > **Design call (rust Vizsla → toddler-cute):** Vizslas are sleek and lanky, but the
 > brand wants a warm, rounded, preschool-friendly pup. We keep her unmistakable
@@ -33,9 +35,9 @@ home), then every future `generate_image` call passes that model sheet as a refe
 - **Breed / build:** **Vizsla**, cartoon-rounded but keeping her lean, elegant
   silhouette and long legs (do NOT make her a stubby blob). Friendly puppy-cute via a
   slightly larger head + softer curves, not by shortening her legs.
-- **Coat color & markings:** **smooth short rust / copper / golden-brown coat**,
-  slightly lighter around the muzzle; **brown nose**. Solid color, NO patches/markings
-  (this is what makes her easy to redraw identically every time).
+- **Coat color & markings:** **smooth short rust / copper coat with a white chest
+  blaze and a cream/white muzzle & chin** (per the locked `willow-hero.png`); **brown
+  nose**. Keep these exact markings every time — they're her signature.
 - **Eyes:** big, round, **warm honey-amber** (her real eye color), friendly highlight;
   expressive eyebrows.
 - **Ears:** **long, high-set, floppy with rounded tips**; she tilts her head when
