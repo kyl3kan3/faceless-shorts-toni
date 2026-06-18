@@ -1,0 +1,34 @@
+{
+  "channel": {
+    "niche": "<YOUR NICHE — e.g. educational explainers / motivation / scary stories>",
+    "format": "youtube_shorts",
+    "name": "<CHANNEL NAME>",
+    "handle": "<@handle>"
+  },
+  "video": {
+    "width": 1080, "height": 1920, "fps": 30,
+    "max_duration_s": 58, "aspect_ratio": "9:16",
+    "target_words": 95, "beats": 7,
+    "_note": "Aim ~95 words / ~30-34s so the 7x5s clips SPEED UP to fit (keeps fps >=30)."
+  },
+  "models": {
+    "image": "nano_banana_2",
+    "video": "cinematic_studio_video",
+    "_video_note": "Do NOT use kling2_6 — it failed a whole batch and still charged.",
+    "tts_tool": "elevenlabs_api",
+    "tts_provider": "elevenlabs",
+    "tts_voice_id": "<ELEVENLABS_VOICE_ID from your one-time clone>",
+    "tts_model": "eleven_multilingual_v2",
+    "music": "generate_music"
+  },
+  "style": {
+    "image_suffix": "<FIXED STYLE SUFFIX appended to every image prompt — e.g. clean cinematic style, soft volumetric lighting, shallow depth of field, cohesive color grade, single clear subject, vertical 9:16 composition, no text, highly detailed, photorealistic>",
+    "motion": "subtle slow push-in / parallax / drift, no fast moves",
+    "captions": { "style": "hormozi", "position": "middle" }
+  },
+  "youtube": {
+    "channel_id": "<UC... if known>",
+    "categoryId": "27",
+    "default_privacy": "public"
+  }
+}
