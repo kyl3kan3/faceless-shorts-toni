@@ -8,6 +8,11 @@
 assets/voices/*
 !assets/voices/.gitkeep
 
+# Willow's raw photos/videos show the real home & family — keep them local, do NOT commit.
+# Only the generated CARTOON Willow (assets/concept, assets/brand) is safe to commit.
+assets/willow-photos/*
+!assets/willow-photos/.gitkeep
+
 # Rendered media (large + regenerable) — keep scripts/prompts, not the heavy outputs.
 videos/**/final/
 videos/**/audio/*.mp3

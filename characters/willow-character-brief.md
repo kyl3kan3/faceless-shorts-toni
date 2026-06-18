@@ -6,31 +6,47 @@ parents trust. Keep this open whenever generating any image of Willow.
 
 ---
 
-## ⚠️ Status: AWAITING REAL DOG PHOTOS
-Willow is a **real family dog**. The cartoon must clearly read as *her* (her real
-colors, ear shape, markings) so the family — and eventually fans — recognize her.
-Until photos land, we work from a **placeholder design** purely to lock the *art
-style*. See [`../INTAKE.md`](../INTAKE.md) for exactly what photos to drop in.
+## ✅ Status: REAL FOOTAGE RECEIVED — reference frames staged
+Willow is a **real family dog: a Vizsla** (warm rust/copper coat). Reference frames
+were extracted from the owner's clips and staged **locally** (gitignored for privacy —
+they show the real home) at:
+- `assets/willow-photos/willow_ref_01_face.jpg` — sharp 4K face, front, eyes to camera
+- `assets/willow-photos/willow_ref_02_sit_front.jpg` — full-body sitting, proportions
+- `assets/willow-photos/willow_ref_03_sit_profile.jpg` — 3/4 profile, muzzle + ear shape
 
-**When the photos arrive:** run the "Master regeneration prompt" below with the real
-photos as reference images, produce a **character turnaround + expression sheet**,
-save the chosen frames to `assets/concept/willow-model-sheet.png`, and update the
-"Locked spec" bullets to match the real dog (colors/breed/markings). Every future
-`generate_image` call passes that model sheet as a reference image.
+**Next:** run the "Master regeneration prompt" below with these frames as reference
+images, produce a **character turnaround + expression sheet**, save the chosen frames
+to `assets/concept/willow-model-sheet.png` (safe to commit — it's the cartoon, not the
+home), then every future `generate_image` call passes that model sheet as a reference.
+
+> **Design call (rust Vizsla → toddler-cute):** Vizslas are sleek and lanky, but the
+> brand wants a warm, rounded, preschool-friendly pup. We keep her unmistakable
+> identity markers — **warm rust/copper coat, long high-set floppy ears, honey-amber
+> eyes, long tapered (but softened) muzzle, slim build** — and gently round her into a
+> cute cartoon. We do NOT go full stubby-legged blob (that erases the Vizsla); we keep
+> her elegant lines, just friendlier. Solid coat = no complex markings to reproduce =
+> easy consistency.
 
 ---
 
-## Locked spec (fill the [brackets] from the real photos)
-- **Breed / build:** [breed — e.g. "fluffy medium golden-doodle"], cartoon-rounded,
-  puppy-cute proportions (big head, small body, stubby legs — toddler-friendly).
-- **Coat color & markings:** [real color, e.g. "soft cream with caramel ears and a
-  white chest blaze"]. Keep markings simple and repeatable.
-- **Eyes:** big, round, warm brown, friendly highlight; expressive eyebrows.
-- **Ears:** [floppy / pointy per real dog]; she tilts her head when thinking.
+## Locked spec (matched to the real Willow)
+- **Breed / build:** **Vizsla**, cartoon-rounded but keeping her lean, elegant
+  silhouette and long legs (do NOT make her a stubby blob). Friendly puppy-cute via a
+  slightly larger head + softer curves, not by shortening her legs.
+- **Coat color & markings:** **smooth short rust / copper / golden-brown coat**,
+  slightly lighter around the muzzle; **brown nose**. Solid color, NO patches/markings
+  (this is what makes her easy to redraw identically every time).
+- **Eyes:** big, round, **warm honey-amber** (her real eye color), friendly highlight;
+  expressive eyebrows.
+- **Ears:** **long, high-set, floppy with rounded tips**; she tilts her head when
+  thinking.
+- **Muzzle:** long and tapered like a real Vizsla, but **softened/rounded** for
+  cuteness.
 - **Signature accessory:** a **teal bandana** (brand accent `#19B5A5`) — always on.
-- **Tail:** waggy; emits little **sparkles** ✨ when something is learned.
-- **Proportions rule:** head ≈ 1.4× body width; never realistic, never lanky.
-- **Palette:** warm creams + the teal accent; soft candy background colors.
+- **Tail:** long and waggy; emits little **sparkles** ✨ when something is learned.
+- **Proportions rule:** head a touch oversized for cuteness, but keep recognizably a
+  Vizsla — slim body, long legs. Stylized, not photoreal; cute, not lanky-realistic.
+- **Palette:** warm rust/copper + the teal accent; soft candy background colors.
 
 ## Personality (drives expression + pose, see bible §2)
 Curious, gentle, giggly, encouraging; *learns alongside the child*, makes friendly
@@ -50,15 +66,16 @@ Generate these poses once, reuse forever (paste as references for new scenes):
 > real dog photos attached as reference images**. Generate 3–4 and pick the best.
 
 ```
-Character model sheet of "Willow the Wonder Pup", a friendly cartoon puppy based on
-the reference photos of this real dog — keep her exact coat color, ear shape, and
-markings. Bright flat 2D cartoon storybook style for young children: bold clean
-outlines, candy-saturated colors, soft rounded shapes, big round warm-brown friendly
-eyes, puppy-cute proportions (big head, small rounded body, stubby legs). She wears a
-small teal bandana. Plain soft pastel background. Show the SAME puppy in a row of
-poses: sitting happy front view, head-tilt thinking, excited jump with sparkly tail,
-pointing with one paw, waving goodbye. Consistent design across all poses, wholesome,
-no text, no scary elements. Vertical 9:16.
+Character model sheet of "Willow the Wonder Pup", a friendly cartoon Vizsla puppy
+based on the reference photos of this real dog — keep her warm rust/copper coat, long
+high-set floppy ears, honey-amber eyes, and long softened muzzle. Bright flat 2D
+cartoon storybook style for young children: bold clean outlines, candy-saturated
+colors, soft rounded shapes, big round friendly amber eyes. Cute, slightly
+big-headed proportions but keep her lean Vizsla build and long legs (NOT a
+stubby-legged blob). She wears a small teal bandana. Plain soft pastel background.
+Show the SAME puppy in a row of poses: sitting happy front view, head-tilt thinking,
+excited jump with sparkly tail, pointing with one paw, waving goodbye. Consistent
+design across all poses, wholesome, no text, no scary elements. Vertical 9:16.
 ```
 
 ## Consistency checklist (every Willow frame)
