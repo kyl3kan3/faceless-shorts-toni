@@ -1,20 +1,17 @@
-# Preview reels (proofs)
+# Rendered episodes (ready to publish)
 
-## ⭐ `ep001-count-to-5.mp4` — the real Episode 001 (current)
-**21.3s · 1080×1920 · 30fps.** The first genuine episode built on the real assets:
-- **Real Willow** (owner-approved cartoon) in every beat — hook peek → count 1→5 → goodbye wave
-- **Real cloned family voices**: Willow/Daisy hook + payoff, Mama counting, Leo's "Three! Four!"
-- Teal number badges, apple props, bottom captions, branded background
-- Gentle push-in motion per beat (calm-for-toddlers), nursery music bed mixed under the voiceover
+These are the only `.mp4`s committed (per `.gitignore`). Each is a finished, on-brand
+Short. Publish via the matching `videos/NNN-*/PUBLISH.md` (title, tags, made-for-kids).
 
-This is publish-ready as a Short. See [`../../videos/001-counting-to-5/BUILD-NOTES.md`](../../videos/001-counting-to-5/BUILD-NOTES.md)
-for exactly how it was produced (assets, voice IDs, beat timings, ffmpeg recipe).
+## ⭐ `ep001-count-to-5.mp4` — Episode 001 "Count to 5 with Willow"
+**1080×1920 · ~29s · sing-along SONG version (current/canonical).**
+Original "Count to 5 with Willow" song, real Willow dancing on the beat (88 BPM),
+numbers 1→5 popping in as the song sings them, celebration + wave. Built on the real
+Willow + designed Willow voice. **Publish metadata:** `../../videos/001-counting-to-5/PUBLISH.md`.
 
-## `ep001-counting-animatic.mp4` — old placeholder animatic (superseded)
-The original 15.5s storyboard proof built from **placeholder** art with **music only / no
-voices**. Kept for reference; the real reel above replaces it.
+> Format history (for reference): earlier spoken/slideshow cuts were replaced by this
+> song-driven version, which is the format that performs in kids' Shorts.
 
-## Optional next upgrade
-Swap individual beats for **Higgsfield AI image-to-video** (living motion / lip-synced
-Willow) where desired — the current reel uses clean still beats with push-ins, which keeps
-Willow perfectly on-model and is fully reliable.
+## How to publish
+See [`../../CLAUDE.md`](../../CLAUDE.md) → "WHAT TO DO: publish" and each episode's
+`PUBLISH.md`. Always upload with **made-for-kids = true** (COPPA); Unlisted for review → Public.
