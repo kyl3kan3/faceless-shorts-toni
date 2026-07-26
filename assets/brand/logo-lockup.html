@@ -1,0 +1,39 @@
+<!doctype html>
+<!--
+  Learn With Willow — horizontal LOGO LOCKUP
+  Render: open in a browser and screenshot, OR feed this HTML to Pika html_to_png
+  (viewport 1600x520, transparent_background:true, device_scale:2), OR import to
+  Adobe Express / Canva. Swap the <img> src to the REAL Willow face once generated.
+  Local preview uses the placeholder face committed in ../concept/.
+-->
+<html lang="en"><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap');
+  :root{ --teal:#19B5A5; --teal-deep:#0E8C80; --cream:#FFF7E8; --ink:#3A2E2A; --sun:#FFC94D; }
+  *{margin:0;box-sizing:border-box}
+  html,body{width:1600px;height:520px;background:transparent;font-family:'Fredoka',system-ui,sans-serif}
+  .wrap{display:flex;align-items:center;gap:56px;height:100%;padding:40px 64px}
+  .badge{flex:0 0 auto;width:420px;height:420px;border-radius:50%;
+    background:radial-gradient(circle at 50% 38%, #DFF7F2 0%, #BCEBE3 70%, #9FE0D6 100%);
+    border:14px solid var(--teal);box-shadow:0 14px 0 rgba(14,140,128,.25), 0 24px 40px rgba(0,0,0,.12);
+    display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+  .badge img{width:104%;margin-bottom:-2%}
+  .type{display:flex;flex-direction:column;justify-content:center}
+  .kicker{font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--teal-deep);
+    font-size:54px;margin-left:8px}
+  .word{font-weight:700;font-size:200px;line-height:.86;color:var(--teal);
+    -webkit-text-stroke:10px var(--ink);paint-order:stroke fill;
+    text-shadow:0 10px 0 rgba(58,46,42,.18)}
+  .tag{margin-top:18px;margin-left:10px;font-weight:600;font-size:46px;color:var(--ink)}
+  .tag .paw{color:var(--sun)}
+</style></head>
+<body>
+  <div class="wrap">
+    <div class="badge"><img src="../concept/willow-face.png" alt="Willow"></div>
+    <div class="type">
+      <div class="kicker">Learn&nbsp;With</div>
+      <div class="word">WILLOW</div>
+      <div class="tag"><span class="paw">🐾</span> Come learn with Willow!</div>
+    </div>
+  </div>
+</body></html>

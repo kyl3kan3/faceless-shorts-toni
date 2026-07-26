@@ -1,0 +1,31 @@
+# Secrets — never commit
+.env
+.env/
+*.key
+*api*key*
+
+# Children's raw voice recordings are sensitive — keep them local, do NOT commit.
+assets/voices/*
+!assets/voices/.gitkeep
+
+# Willow's raw photos/videos show the real home & family — keep them local, do NOT commit.
+# Only the generated CARTOON Willow (assets/concept, assets/brand) is safe to commit.
+assets/willow-photos/*
+!assets/willow-photos/.gitkeep
+
+# Rendered media (large + regenerable) — keep scripts/prompts, not the heavy outputs.
+videos/**/final/
+videos/**/audio/*.mp3
+videos/**/audio/*.wav
+*.mp4
+*.mov
+# ...but DO commit the small preview/proof reels.
+!assets/preview/*.mp4
+
+# Scratch / build
+build/
+
+# OS / tooling
+.DS_Store
+Thumbs.db
+node_modules/
